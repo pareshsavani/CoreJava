@@ -1,0 +1,21 @@
+# CoreJava
+import java.util.Scanner;
+
+class AddNumbers
+{
+  public static void main(String[] args)
+  {
+    int n1,n2,ans;
+    Scanner s1=new Scanner(System.in);    
+    
+    System.out.println("Please enter first Number1:");
+    n1=s1.nextInt();
+    
+    System.out.ptintln("Please enter Number2");
+    n2=s1.nextInt();
+    
+    ans=n1+n2;
+    System.out.println("The sum of two numbers is::"+ans);
+    
+  }
+}
