@@ -14,7 +14,7 @@ class AddNumbers
     System.out.println("Please enter first Number1:");
     int n1=s1.nextInt();
     
-    System.out.ptintln("Please enter Number2");
+    System.out.println("Please enter Number2");
     int n2=s1.nextInt();
     
     int ans=n1+n2;
@@ -22,9 +22,9 @@ class AddNumbers
     
     System.out.println("Do you want to continue?Yes or No");
     choice=s1.next();    
-    }while(choice=s1.equalsIgnoreCase("Yes")||choice=s1.equalsIgnoreCase("Y"))
+    }while(choice.equalsIgnoreCase("Yes")||choice.equalsIgnoreCase("Y"));
     
-    if(choice=s1.equalsIgnoreCase("No")||choice=s1.equalsIgnoreCase("N"))
+    if(choice.equalsIgnoreCase("No")||choice.equalsIgnoreCase("N"))
     {
       System.out.println("Program will end...");
      }
