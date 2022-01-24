@@ -20,9 +20,17 @@ class AddNumbers
     int ans=n1+n2;
     System.out.println("The sum of two numbers is::"+ans);
     
-    
     System.out.println("Do you want to continue?Yes or No");
     choice=s1.next();    
     }while(choice=s1.equalsIgnoreCase("Yes")||choice=s1.equalsIgnoreCase("Y"))
+    
+    if(choice=s1.equalsIgnoreCase("No")||choice=s1.equalsIgnoreCase("N"))
+    {
+      System.out.println("Program will end...");
+     }
+     else
+     { 
+      System.out.println("Your choice is wrong...!");
+     }
   }
 }
