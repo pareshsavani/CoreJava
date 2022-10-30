@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class test8 {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> al = new ArrayList<>();
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Please enter numbers, 0 to end..");
+		int num;
+		
+		while ((num=sc.nextInt()) != 0) {	
+			al.add(num);
+		}
+		
+		System.out.println("size of AL is :" + al.size());
+		System.out.print("Number entered..: ");
+
+		for (int i = 0; i < al.size(); i++) {
+			System.out.print(" "+al.get(i)+",");
+		}
+		sc.close();
+	}
+}
