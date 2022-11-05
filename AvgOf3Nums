@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class AvgOf3Nums{
+    
+    public int getAverage(int n1, int n2, int n3){ 
+        int avrg = (n1+n2+n3)/3;
+        return avrg;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int nums[] = new int[3];
+
+        System.out.println("Plear enter 3 numbers to get average of it :");
+        for(int i=0; i<3; i++){
+            nums[i]=sc.nextInt();           
+        }
+
+        avgOf3 avg = new avgOf3();
+        System.out.println("Average of number entered is :"+avg.getAverage(nums[0],nums[1],nums[2]));
+
+    }
+}
